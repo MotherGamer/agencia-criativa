@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Agência Criativa Web</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <h2>Criamos experiências digitais que conectam marcas e pessoas</h2>
+      <p>
+        Somos uma agência de design digital especializada em criar soluções
+        modernas, responsivas e estratégicas para fortalecer a presença online
+        do seu negócio.
+      </p>
+      <img
+        src="img/hero-800.png"
+        srcset="
+          img/hero-400.png   400w,
+          img/hero-800.png   800w,
+          img/hero-1200.png 1200w
+        "
+        sizes="(max-width: 768px) 100vw, 50vw"
+        alt="Equipe trabalhando em soluções digitais"
+      />
+      <a href="#contato">Solicitar orçamento</a>
+    </section>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        A Agência Criativa Web nasceu com o objetivo de unir design, tecnologia
+        e estratégia para entregar projetos modernos, responsivos e alinhados às
+        necessidades de cada cliente.
+      </p>
+    </section>
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <p>
+        Oferecemos serviços de design gráfico, desenvolvimento web, branding e
+        criação de interfaces focadas na experiência do usuário.
+      </p>
+      <div class="servicos-grid">
+        <article>
+          <h3>Design de Interfaces (UI)</h3>
+          <p>
+            Criamos telas modernas e intuitivas, focadas em usabilidade e
+            conversão.
+          </p>
+        </article>
+        <article>
+          <h3>Desenvolvimento Web</h3>
+          <p>
+            Sites rápidos e responsivos, com código limpo e boa performance.
+          </p>
+        </article>
+        <article>
+          <h3>Branding</h3>
+          <p>
+            Identidade visual consistente para fortalecer a percepção da sua
+            marca.
+          </p>
+        </article>
+        <article>
+          <h3>Landing Pages</h3>
+          <p>Páginas estratégicas para campanhas, com foco em resultados.</p>
+        </article>
+      </div>
+    </section>
+    <section id="depoimentos">
+      <h2>Depoimentos</h2>
+      <p>
+        Confira alguns depoimentos de clientes que confiaram em nosso trabalho e
+        obtiveram excelentes resultados com nossas soluções digitais.
+      </p>
+      <div class="depoimentos-grid">
+        <article>
+          <strong>Mariana S. — Loja Online</strong>
+          <p>
+            “Equipe rápida e criativa. Nosso site ficou leve, bonito e aumentou
+            as conversões.”
+          </p>
+        </article>
+        <article>
+          <strong>Rafael P. — Consultoria</strong>
+          <p>
+            “Excelente comunicação e entrega no prazo. A identidade visual ficou
+            muito profissional.”
+          </p>
+        </article>
+        <article>
+          <strong>Camila A. — Startup</strong>
+          <p>
+            “Transformaram nossa ideia em uma landing page moderna e responsiva.
+            Recomendo demais.”
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>
+        Entre em contato conosco para saber mais sobre nossos serviços ou
+        solicitar um orçamento. Teremos prazer em atender você.
+      </p>
+      <form>
+        <div class="form-row">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+        </div>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </body>
+</html>
