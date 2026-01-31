@@ -23,7 +23,7 @@ section {
   padding: 4rem;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +32,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-nav ul {
+.header__list {
   list-style: none;
   display: flex;
   gap: 1.5rem;
@@ -40,36 +40,38 @@ nav ul {
   padding: 0;
 }
 
-nav a {
+.header__link {
   text-decoration: none;
   color: #0f172a;
   font-weight: 400;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-bottom-color 0.2s ease;
 }
 
-nav a:hover {
+.header__link:hover {
   color: #7c3aed;
   border-bottom-color: #7c3aed;
 }
 
-#home {
+.hero {
   max-width: 50rem;
   margin: 0 auto;
 }
 
-#home h2 {
+.hero__title {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
-#home p {
+.hero__description {
   line-height: 1.5;
   margin-bottom: 1rem;
 }
 
-#home a {
+.hero__button {
   display: inline-block;
   text-decoration: none;
   background-color: #f7fdff;
@@ -79,7 +81,7 @@ nav a:hover {
   border-radius: 2rem;
 }
 
-#home img {
+.hero__image {
   width: 100%;
   max-width: 40rem;
   height: auto;
@@ -88,50 +90,12 @@ nav a:hover {
   border-radius: 1rem;
 }
 
-#sobre h2,
-#sobre p {
-  max-width: 70rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.servicos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1.5rem;
-}
-
-#servicos article {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid var(--cor-borda);
-}
-
-#servicos {
+.container {
   max-width: 70rem;
   margin: 0 auto;
 }
 
-.depoimentos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1.5rem;
-}
-
-#depoimentos article {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid var(--cor-borda);
-}
-
-#depoimentos {
-  max-width: 70rem;
-  margin: 0 auto;
-}
-
-#depoimentos strong {
+.depoimentos__client {
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -160,11 +124,6 @@ nav a:hover {
   box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
 }
 
-#contato {
-  max-width: 70rem;
-  margin: 0 auto;
-}
-
 #contato form > div {
   margin-bottom: 1rem;
 }
@@ -178,8 +137,21 @@ nav a:hover {
   flex: 1;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--cor-borda);
+}
+
 @media (max-width: 768px) {
-  header {
+  .header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -189,7 +161,7 @@ nav a:hover {
     padding: 2rem;
   }
 
-  #home h2 {
+  .hero__title {
     font-size: 1.8rem;
   }
 

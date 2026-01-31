@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -7,26 +7,39 @@
     <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <header>
-      <h1>Agência Criativa Web</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
+    <header class="header">
+      <h1 class="header__title">Agência Criativa Web</h1>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#home" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#sobre" class="header__link">Sobre</a>
+          </li>
+          <li class="header__item">
+            <a href="#servicos" class="header__link">Serviços</a>
+          </li>
+          <li class="header__item">
+            <a href="#depoimentos" class="header__link">Depoimentos</a>
+          </li>
+          <li class="header__item">
+            <a href="#contato" class="header__link">Contato</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <section id="home">
-      <h2>Criamos experiências digitais que conectam marcas e pessoas</h2>
-      <p>
+    <section id="home" class="hero">
+      <h2 class="hero__title">
+        Criamos experiências digitais que conectam marcas e pessoas
+      </h2>
+      <p class="hero__description">
         Somos uma agência de design digital especializada em criar soluções
         modernas, responsivas e estratégicas para fortalecer a presença online
         do seu negócio.
       </p>
       <img
+        class="hero__image"
         src="img/hero-800.png"
         srcset="
           img/hero-400.png   400w,
@@ -36,9 +49,10 @@
         sizes="(max-width: 768px) 100vw, 50vw"
         alt="Equipe trabalhando em soluções digitais"
       />
-      <a href="#contato">Solicitar orçamento</a>
+      <a class="hero__button" href="#contato">Solicitar orçamento</a>
     </section>
-    <section id="sobre">
+
+    <section id="sobre" class="container">
       <h2>Sobre Nós</h2>
       <p>
         A Agência Criativa Web nasceu com o objetivo de unir design, tecnologia
@@ -46,62 +60,69 @@
         necessidades de cada cliente.
       </p>
     </section>
-    <section id="servicos">
+
+    <section id="servicos" class="container">
       <h2>Serviços</h2>
       <p>
         Oferecemos serviços de design gráfico, desenvolvimento web, branding e
         criação de interfaces focadas na experiência do usuário.
       </p>
-      <div class="servicos-grid">
-        <article>
+      <div class="grid">
+        <article class="card">
           <h3>Design de Interfaces (UI)</h3>
           <p>
             Criamos telas modernas e intuitivas, focadas em usabilidade e
             conversão.
           </p>
         </article>
-        <article>
+
+        <article class="card">
           <h3>Desenvolvimento Web</h3>
           <p>
             Sites rápidos e responsivos, com código limpo e boa performance.
           </p>
         </article>
-        <article>
+
+        <article class="card">
           <h3>Branding</h3>
           <p>
             Identidade visual consistente para fortalecer a percepção da sua
             marca.
           </p>
         </article>
-        <article>
+
+        <article class="card">
           <h3>Landing Pages</h3>
           <p>Páginas estratégicas para campanhas, com foco em resultados.</p>
         </article>
       </div>
     </section>
-    <section id="depoimentos">
+
+    <section id="depoimentos" class="container">
       <h2>Depoimentos</h2>
       <p>
         Confira alguns depoimentos de clientes que confiaram em nosso trabalho e
         obtiveram excelentes resultados com nossas soluções digitais.
       </p>
-      <div class="depoimentos-grid">
-        <article>
-          <strong>Mariana S. — Loja Online</strong>
+      <div class="grid">
+        <article class="card">
+          <strong class="depoimentos__client">Mariana S. — Loja Online</strong>
           <p>
             “Equipe rápida e criativa. Nosso site ficou leve, bonito e aumentou
             as conversões.”
           </p>
         </article>
-        <article>
-          <strong>Rafael P. — Consultoria</strong>
+
+        <article class="card">
+          <strong class="depoimentos__client">Rafael P. — Consultoria</strong>
           <p>
             “Excelente comunicação e entrega no prazo. A identidade visual ficou
             muito profissional.”
           </p>
         </article>
-        <article>
-          <strong>Camila A. — Startup</strong>
+
+        <article class="card">
+          <strong class="depoimentos__client">Camila A. — Startup</strong>
           <p>
             “Transformaram nossa ideia em uma landing page moderna e responsiva.
             Recomendo demais.”
@@ -109,7 +130,7 @@
         </article>
       </div>
     </section>
-    <section id="contato">
+    <section id="contato" class="container">
       <h2>Contato</h2>
       <p>
         Entre em contato conosco para saber mais sobre nossos serviços ou
